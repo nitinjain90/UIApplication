@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_prepaid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Prepaid"
+            android:paddingTop="5sp"
+            />
+
+        <RadioButton
+            android:id="@+id/radio_postpaid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Postpaid"
+            android:paddingTop="5sp"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/text_phone_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="number"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:paddingTop="20sp"
+            android:textAlignment="center"
+            android:hint="Mobile Number" />
+
+        <TextView
+            android:id="@+id/prefix_to_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/text_phone_number"
+            android:layout_alignBottom="@id/text_phone_number"
+            android:text="+91"
+            android:textColor="#000000"
+            android:textSize="20sp"></TextView>
+
+        <ImageView
+            android:layout_height="40sp"
+            android:layout_width="40sp"
+            android:src="@drawable/phonebook"
+            android:layout_alignBottom="@id/text_phone_number"
+            android:layout_alignRight="@id/text_phone_number"
+            android:id="@+id/img_phonebook"
+            android:layout_marginRight="10sp"
+            android:layout_marginBottom="10sp">
+        </ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/text_operator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Operator"
+            android:inputType="phone"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:paddingTop="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/text_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Enter Amount"
+            android:inputType="phone"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:paddingTop="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Browse plans"
+            android:layout_alignEnd="@id/text_amount"
+            android:autoText="false"
+            android:textColor="#a6dbe8"
+            android:id="@+id/text_browse_plans"
+            android:textSize="18sp"
+            >
+        </TextView>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="of all operators"
+            android:layout_alignEnd="@id/text_amount"
+            android:layout_below="@id/text_browse_plans">
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10sp">
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/fast_forward_checkbox"
+            />
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Fast Forward It"
+            android:layout_toRightOf="@id/fast_forward_checkbox"
+            android:id="@+id/text_fast_forward"
+            android:textSize="20sp"
+            android:textColor="#000000">
+        </TextView>
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Instant One Touch Payment"
+            android:layout_below="@id/text_fast_forward"
+            android:layout_toRightOf="@id/fast_forward_checkbox">
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10sp"
+        android:paddingRight="10sp"
+        android:paddingLeft="10sp">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proceed To Recharge"
+            android:id="@+id/btn_recharge"
+            android:layout_gravity="center_horizontal"
+            android:background="@layout/rounded" />
+    </RelativeLayout>
+
+    <RelativeLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15sp">
+        <ImageView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/paytm">
+        </ImageView>
+    </RelativeLayout>
+
+
+</LinearLayout>
